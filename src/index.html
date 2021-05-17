@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('_head.html',{
+		"title": "Sergey Gospodarchuk"
+	})
+<body>
+	<div style="display:none">
+		@@include('_svgsprite.html')
+	</div>
+
+	<div class="wrapper">
+		@@include('_header.html')
+		<main class="content">
+
+			<section class="projects">
+				<div class="projects__container">
+					<h2 class="projects__title _title">
+						My projects
+					</h2>
+					<nav class="projects__filter filter">
+						<ul class="filter__list">
+							<li data-filter="all" class="filter__item filter__item--active">all</li>
+							<li data-filter="personal" class="filter__item">personal</li>
+							<li data-filter="freelance" class="filter__item ">freelance</li>
+						</ul>
+					</nav>
+					<div class="projects__items">
+						<div class="projects__block personal">
+							<div class="projects__item">
+								<img src="img/projects/1.png" class="projects__img" alt="Portfolio website">
+							</div>
+							<div class="projects__name">
+								<a href="https://projects.gosxrgxx.com/blog-portfolio/" class="projects__name-link" target="_blank">
+									Portfolio
+								</a>
+							</div>
+						</div>
+						<div class="projects__block personal">
+							<div class="projects__item">
+								<img src="img/projects/2.png" class="projects__img" alt="Landing page">
+							</div>
+							<div class="projects__name">
+								<a href="https://projects.gosxrgxx.com/coffeema/" class="projects__name-link" target="_blank">
+									Landing page
+								</a>
+							</div>
+						</div>
+						<div class="projects__block personal">
+							<div class="projects__item">
+								<img src="img/projects/3.png" class="projects__img" alt="Travel website">
+							</div>
+							<div class="projects__name">
+								<a href="https://projects.gosxrgxx.com/travel-ws/" class="projects__name-link" target="_blank">
+									Travel website
+								</a>
+							</div>
+						</div>
+						<div class="projects__block freelance">
+							<div class="projects__item">
+								<img src="img/projects/4.png" class="projects__img" alt="Family doctor website">
+							</div>
+							<div class="projects__name">
+								<a href="https://projects.gosxrgxx.com/lendKomp/" class="projects__name-link" target="_blank">
+									Family doctor
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		@@include('_footer.html')
+	</div>
+
+	@@include('_js.html')
+</body>
+</html>

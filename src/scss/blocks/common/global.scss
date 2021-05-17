@@ -1,0 +1,26 @@
+// utils
+@import "../../utils/mixins.scss";
+@import "../../utils/fonts.scss";
+@import "../../utils/variables.scss";
+@import "../../utils/null.scss";
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.container {
+	max-width: $container + 30px;
+	padding: 0px 15px;
+	margin: 0 auto;
+}
+
+.content {
+	flex: 1 1 auto;
+}
+
+// common
+@import "_title.scss";
