@@ -1,14 +1,14 @@
-const filterList = document.querySelector('.filter__list');
-const filterItem = document.querySelectorAll('.filter__item');
+const filterItems = document.querySelector('.filter__items');
+const fiterButton = document.querySelectorAll('.filter__button');
 const projectsBlock = document.querySelectorAll('.projects__block');
 
 function filter() {
-	filterList.addEventListener('click', event => {
+	filterItems.addEventListener('click', event => {
 		const targetFilter = event.target.dataset.filter;
 
-		if (event.target.classList.contains('filter__item')) {
-			filterItem.forEach(listItem => listItem.classList.remove('filter__item--active'));
-			event.target.classList.add('filter__item--active');
+		if (event.target.classList.contains('filter__button')) {
+			fiterButton.forEach(listItem => listItem.classList.remove('active'));
+			event.target.classList.add('active');
 		}
 
 		switch(targetFilter) {

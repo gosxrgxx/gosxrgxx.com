@@ -13,6 +13,14 @@
 		margin: 0px 0px 25px 0px;
 	}
 
+	&__filter {
+		margin: 0px 0px 45px 0px;
+
+		@include max-w($tablet) {
+			margin: 0px 0px 80px 0px;
+		}
+	}
+
 	&__items {
 		width: 100%;
 		display: flex;
@@ -117,30 +125,4 @@
 	&__name {
 		text-align: center;
 	}
-
-	&__name-link {
-		font-weight: 400;
-		font-size: 16px;
-		color: $black;
-
-		&::before {
-			content: '<';
-		}
-
-		&::after {
-			content: '>';
-		}
-
-		&:hover {
-
-			&::before {
-				content: '>';
-			}
-
-			&::after {
-				content: '<';
-			}
-		}
-	}
-
 }
