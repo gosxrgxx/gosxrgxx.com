@@ -17,6 +17,7 @@ function filter() {
 				break;
 			case 'personal':
 			case 'freelance':
+			case 'test':
 				getNameFilter(targetFilter);
 				break;
 		}
